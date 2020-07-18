@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageCountry"
+        android:layout_width="248dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/nameLiga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nameLiga"
+        android:layout_width="225dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="NameText"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/listViewTeam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCountry" />
+
+    <TextView
+        android:id="@+id/listViewTeam"
+        android:layout_width="251dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameLiga" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
